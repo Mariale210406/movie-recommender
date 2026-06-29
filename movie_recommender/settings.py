@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    'recommender',
 ]
 
 MIDDLEWARE = [
@@ -146,3 +147,6 @@ DATABASES = {
         default=config('DATABASE_URL', default='sqlite:///db.sqlite3')
     )
 } 
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/login/'
