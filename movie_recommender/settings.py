@@ -147,6 +147,6 @@ DATABASES = {
         default=config('DATABASE_URL', default='sqlite:///db.sqlite3')
     )
 } 
-LOGIN_URL = '/login/'
+LOGIN_URL = '/login/' 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/login/'
